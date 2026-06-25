@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="收费准则 — 合理透明，只求糊口。按单收费，先沟通后报价。">
+  <title>收费准则 | 美国老潘跑腿</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bd:#7A3B1E;--bd2:#5C2B12;--bm:#D85A30;--am:#EF9F27;--al:#FAEEDA;--cr:#FDF3E7;--cl:#FFFBF7;--td:#412402;--tm:#633806;--tu:#854F0B;--br:#F5C4B3}
+    body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--cl);color:var(--td);font-size:16px;line-height:1.7}
+    .nav{background:var(--bd);display:flex;align-items:center;padding:0 32px;height:58px;position:sticky;top:0;z-index:100;gap:4px}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:20px;flex-shrink:0}
+    .nav-logo svg{width:38px;height:38px}
+    .nav-logo-zh{color:var(--al);font-size:14px;font-weight:600;display:block}
+    .nav-logo-en{color:rgba(250,238,218,.55);font-size:10px;display:block}
+    .nav-links{display:flex;align-items:center;flex:1}
+    .nav-links a{color:rgba(250,238,218,.8);font-size:13px;padding:0 12px;height:58px;display:flex;align-items:center;text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent}
+    .nav-links a:hover,.nav-links a.active{color:var(--al)}
+    .nav-links a.active{border-bottom-color:var(--am)}
+    .nav-dropdown{position:relative}
+    .nav-dropdown>a::after{content:' ▾';font-size:10px;opacity:.7}
+    .dd{display:none;position:absolute;top:100%;left:0;background:#fff;border:.5px solid var(--br);border-radius:10px;min-width:200px;padding:6px 0;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200}
+    .nav-dropdown:hover .dd{display:block}
+    .dd a{display:block;padding:9px 18px;font-size:13px;color:var(--td) !important;text-decoration:none;height:auto;border:none !important;white-space:nowrap;background:transparent}
+    .dd a:hover{background:var(--cr);color:var(--bd) !important}
+    .dd a:hover{background:var(--cr)}
+    .nav-lang{margin-left:auto;background:rgba(255,255,255,.12);color:var(--al);font-size:12px;padding:5px 12px;border-radius:20px;text-decoration:none}
+    .nav-toggle{display:none;background:none;border:none;color:var(--al);font-size:22px;cursor:pointer;margin-left:auto;padding:4px}
+    .hero{background:var(--cr);border-bottom:1px solid var(--br);padding:48px 32px 40px}
+    .hero-inner{max-width:700px;margin:0 auto}
+    .bc{font-size:13px;color:var(--tu);margin-bottom:16px}
+    .bc a{color:var(--tu);text-decoration:none}
+    .hero h1{font-size:28px;font-weight:700;color:var(--td);margin-bottom:10px}
+    .hero p{font-size:15px;color:var(--tu);line-height:1.8}
+    .content{max-width:700px;margin:0 auto;padding:48px 32px}
+    .principle{background:#fff;border:1px solid var(--br);border-radius:14px;padding:24px 28px;margin-bottom:16px;display:flex;gap:18px;align-items:flex-start}
+    .p-num{width:36px;height:36px;border-radius:50%;background:var(--bd);color:var(--al);font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+    .p-title{font-size:15px;font-weight:600;color:var(--td);margin-bottom:6px}
+    .p-desc{font-size:14px;color:var(--tu);line-height:1.8}
+    .pay-box{background:var(--al);border-radius:14px;padding:24px 28px;margin-top:32px}
+    .pay-box h3{font-size:16px;font-weight:600;color:var(--td);margin-bottom:14px}
+    .pay-methods{display:flex;flex-wrap:wrap;gap:10px}
+    .pay-tag{background:#fff;color:var(--tm);font-size:13px;padding:8px 16px;border-radius:8px;border:1px solid var(--br)}
+    .note{background:var(--cr);border:1px solid var(--br);border-radius:12px;padding:20px 24px;margin-top:24px}
+    .note p{font-size:13px;color:var(--tu);line-height:1.8}
+    .cta{background:var(--bd);padding:24px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    .cta-t{color:var(--al);font-size:15px;font-weight:500}
+    .cta-t span{color:rgba(250,238,218,.7);font-size:13px;display:block;margin-top:2px}
+    .btn{background:var(--am);color:var(--td);font-size:13px;font-weight:600;padding:10px 22px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;display:inline-block}
+    footer{background:var(--bd2);padding:18px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+    .fc{font-size:12px;color:rgba(250,238,218,.45)}
+    .fl{display:flex;gap:18px}
+    .fl a{font-size:12px;color:rgba(250,238,218,.45);text-decoration:none}
+    .fl a:hover{color:var(--al)}
+    @media(max-width:700px){
+      .nav-links{display:none;flex-direction:column;position:absolute;top:58px;left:0;right:0;background:var(--bd);padding:8px 0 16px}
+      .nav-links.open{display:flex}
+      .nav-links a{height:44px;padding:0 24px;border-bottom:none}
+      .dd{position:static;box-shadow:none;border:none;background:rgba(255,255,255,.08);border-radius:0}
+      .dd a{color:rgba(250,238,218,.8)}
+      .nav-toggle{display:block}
+      .nav-lang{display:none}
+      .nav{position:relative}
+      .content{padding:32px 20px}
+      .hero{padding:32px 20px}
+      .cta{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/zh/" class="nav-logo">
+    <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="60" r="42" fill="none" stroke="#EF9F27" stroke-width="2"/><ellipse cx="55" cy="60" rx="17" ry="42" fill="none" stroke="#EF9F27" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/><line x1="13" y1="60" x2="97" y2="60" stroke="#EF9F27" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/><g transform="translate(18,8) scale(0.172)" fill="#FAEEDA"><path d="M262.938,232.35c5.536,7.225,13.896,11.584,22.41,11.962c0.925,0.096,1.85,0.144,2.75,0.144l2.39-0.107c3.153-0.204,6.077-0.883,8.798-2.042l61.65-31.588c15.517-7.989,22.116-27.166,14.682-42.754l-3.141-6.641c-5.212-10.926-15.96-17.727-28.06-17.727c-5.002,0-10.028,1.234-14.538,3.552l-23.148,11.881l-10.797-26.121c-2.197-4.636-5.146-8.73-8.58-12.262c26.913-5.692,47.222-30.312,47.222-59.711C334.576,27.331,308.07,0,275.471,0C242.87,0,216.38,27.331,216.38,60.934c0,8.253,1.604,16.105,4.495,23.274c-3.378-0.339-6.765-0.192-10.067,0.588c-1.015-0.084-2.042-0.126-3.086-0.126h-96.587c-4.735,0-9.4,0.742-13.922,2.207c-8.644,1.966-16.054,7.71-20.107,15.321c-0.73,1.177-1.333,2.393-1.925,3.759c-1.667,3.855-2.471,7.575-2.471,11.325v69.667c0,17.99,13.946,32.633,31.12,32.633h7.106c17.156,0,31.12-14.643,31.12-32.633v-29.349h19.912l-38.695,77.378c-3.894,7.565-4.576,16.272-2.03,24.379c-0.006,0.096-0.006,0.204-0.006,0.301v37.902H86.908c-19.774,0-35.855,16.5-35.855,36.772v9.271c0,20.296,16.081,36.786,35.855,36.786h79.125c19.756,0,35.84-16.496,35.84-36.786V322.95l92.206,95.837c6.786,7.062,15.854,10.94,25.515,10.94c9.668,0,18.741-3.879,25.532-10.94l6.299-6.552c13.697-14.237,13.697-37.439,0-51.677L242.967,247.866l12.851-25.665C257.738,225.889,260.128,229.306,262.938,232.35z"/></g></svg>
+    <span><span class="nav-logo-zh">美国老潘跑腿</span><span class="nav-logo-en">Peter AssistInUSA</span></span>
+  </a>
+  <div class="nav-links" id="nav-links">
+    <a href="/zh/">首页</a>
+    <span class="nav-dropdown"><a href="/zh/online/">网络代劳</a><div class="dd"><a href="/zh/online/#misc">网络杂项</a><a href="/zh/online/#publish">网络发布</a><a href="/zh/online/#tech">网络技术</a><a href="/zh/online/#shopping">网络代购</a></div></span>
+    <span class="nav-dropdown"><a href="/zh/onsite/">奥兰多代劳</a><div class="dd"><a href="/zh/onsite/#cargo">奥兰多货物处理</a><a href="/zh/onsite/#care">奥兰多本地照顾</a><a href="/zh/onsite/#biz">奥兰多商务协助</a><a href="/zh/onsite/#realestate">奥兰多房地产物业</a></div></span>
+    <a href="/zh/pricing/" class="active">收费准则</a><a href="/zh/about/">关于我</a><a href="/zh/contact/">联系我</a><a href="/zh/blog/">博客</a><a href="/zh/disclaimer/">免责声明</a>
+  </div>
+  <a href="/en/" class="nav-lang">EN / 中文</a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+</nav>
+
+<div class="hero"><div class="hero-inner">
+  <div class="bc"><a href="/zh/">首页</a> › 收费准则</div>
+  <h1>收费准则</h1>
+  <p>合理透明，只求糊口。每单独立报价，绝不含糊。</p>
+</div></div>
+
+<div class="content">
+  <div class="principle">
+    <div class="p-num">1</div>
+    <div><div class="p-title">合理透明，只求糊口</div><div class="p-desc">收费原则是合理透明，没有暴利，没有坑，我就是图个退休后补贴一下油费。</div></div>
+  </div>
+  <div class="principle">
+    <div class="p-num">2</div>
+    <div><div class="p-title">按单收费，一事一结，先付后做</div><div class="p-desc">每个需求单独计费，完成一件算一件，不打包，不捆绑。付款确认后才开始办事。</div></div>
+  </div>
+  <div class="principle">
+    <div class="p-num">3</div>
+    <div><div class="p-title">按佛州最低时薪计费</div><div class="p-desc">基本按【佛州最低时薪 + 交通/成本实报实销（如果有的话）】计算。时薪参照佛罗里达州官方最低工资标准。小事情，5-6刀也可以交易。</div></div>
+  </div>
+  <div class="principle">
+    <div class="p-num">4</div>
+    <div><div class="p-title">报价分列清楚，透明无隐费</div><div class="p-desc">所有服务收费，包括额外产生的附加费用如交通、邮寄、门票等成本，报价前一定说清楚，绝不事后加价。</div></div>
+  </div>
+
+  <div class="pay-box">
+    <h3>接受的付款方式</h3>
+    <div class="pay-methods">
+      <span class="pay-tag">💴 人民币</span>
+      <span class="pay-tag">💵 美元</span>
+      <span class="pay-tag">💬 微信支付</span>
+      <span class="pay-tag">🔵 支付宝</span>
+      <span class="pay-tag">💙 Venmo</span>
+    </div>
+  </div>
+
+  <div class="note">
+    <p>所有报价均在沟通后提供，无法事先给出标准价目表，因为每个需求都有其独特性。有需求的话，先联系我说清楚情况，我来评估后给你一个清楚的报价。</p>
+  </div>
+</div>
+
+<div class="cta">
+  <div class="cta-t">想了解具体报价？<span>先说说你的需求，我来评估</span></div>
+  <a href="/zh/contact/" class="btn">联系我咨询 →</a>
+</div>
+<footer>
+  <span class="fc">© 2026 美国老潘跑腿 · Peter AssistInUSA · 奥兰多，佛罗里达</span>
+  <div class="fl"><a href="/zh/disclaimer/">免责声明</a><a href="/zh/pricing/">收费准则</a><a href="/zh/blog/">博客</a></div>
+</footer>
+<script>const t=document.getElementById('nav-toggle'),l=document.getElementById('nav-links');t.addEventListener('click',()=>l.classList.toggle('open'));</script>
+</body>
+</html>
+ 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="关于我 — Peter 潘，来自广州，移民美国多年，现居奥兰多。退休后帮您跑细路。">
+  <title>关于我 | 美国老潘跑腿</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--bd:#7A3B1E;--bd2:#5C2B12;--bm:#D85A30;--am:#EF9F27;--al:#FAEEDA;--cr:#FDF3E7;--cl:#FFFBF7;--td:#412402;--tm:#633806;--tu:#854F0B;--br:#F5C4B3}
+    body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--cl);color:var(--td);font-size:16px;line-height:1.7}
+    .nav{background:var(--bd);display:flex;align-items:center;padding:0 32px;height:58px;position:sticky;top:0;z-index:100;gap:4px}
+    .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:20px;flex-shrink:0}
+    .nav-logo svg{width:38px;height:38px}
+    .nav-logo-zh{color:var(--al);font-size:14px;font-weight:600;display:block}
+    .nav-logo-en{color:rgba(250,238,218,.55);font-size:10px;display:block}
+    .nav-links{display:flex;align-items:center;flex:1}
+    .nav-links a{color:rgba(250,238,218,.8);font-size:13px;padding:0 12px;height:58px;display:flex;align-items:center;text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent}
+    .nav-links a:hover,.nav-links a.active{color:var(--al)}
+    .nav-links a.active{border-bottom-color:var(--am)}
+    .nav-dropdown{position:relative}
+    .nav-dropdown>a::after{content:' ▾';font-size:10px;opacity:.7}
+    .dd{display:none;position:absolute;top:100%;left:0;background:#fff;border:.5px solid var(--br);border-radius:10px;min-width:200px;padding:6px 0;box-shadow:0 4px 16px rgba(0,0,0,.08);z-index:200}
+    .nav-dropdown:hover .dd{display:block}
+    .dd a{display:block;padding:9px 18px;font-size:13px;color:var(--td) !important;text-decoration:none;height:auto;border:none !important;white-space:nowrap;background:transparent}
+    .dd a:hover{background:var(--cr);color:var(--bd) !important}
+    .dd a:hover{background:var(--cr)}
+    .nav-lang{margin-left:auto;background:rgba(255,255,255,.12);color:var(--al);font-size:12px;padding:5px 12px;border-radius:20px;text-decoration:none}
+    .nav-toggle{display:none;background:none;border:none;color:var(--al);font-size:22px;cursor:pointer;margin-left:auto;padding:4px}
+    .about-hero{background:var(--cr);border-bottom:1px solid var(--br);padding:52px 32px}
+    .about-inner{max-width:700px;margin:0 auto;display:flex;gap:28px;align-items:flex-start}
+    .avatar{width:88px;height:88px;border-radius:50%;background:var(--bd);display:flex;align-items:center;justify-content:center;color:var(--al);font-size:30px;font-weight:700;flex-shrink:0}
+    .bc{font-size:13px;color:var(--tu);margin-bottom:12px}
+    .bc a{color:var(--tu);text-decoration:none}
+    .about-name{font-size:24px;font-weight:700;color:var(--td);margin-bottom:4px}
+    .about-sub{font-size:14px;color:var(--tu);margin-bottom:16px}
+    .tags{display:flex;flex-wrap:wrap;gap:8px}
+    .tag{background:var(--al);color:var(--tm);font-size:12px;padding:4px 12px;border-radius:20px}
+    .content{max-width:700px;margin:0 auto;padding:48px 32px}
+    .section{margin-bottom:36px}
+    .section h2{font-size:18px;font-weight:600;color:var(--td);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--br)}
+    .section p{font-size:15px;color:var(--tm);line-height:1.9;margin-bottom:12px}
+    .section p:last-child{margin-bottom:0}
+    .quote{background:var(--al);border-left:4px solid var(--bd);padding:16px 20px;border-radius:0 10px 10px 0;margin:24px 0;font-size:15px;color:var(--td);font-style:italic;line-height:1.8}
+    .cta{background:var(--bd);padding:24px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    .cta-t{color:var(--al);font-size:15px;font-weight:500}
+    .cta-t span{color:rgba(250,238,218,.7);font-size:13px;display:block;margin-top:2px}
+    .btn{background:var(--am);color:var(--td);font-size:13px;font-weight:600;padding:10px 22px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;display:inline-block}
+    footer{background:var(--bd2);padding:18px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+    .fc{font-size:12px;color:rgba(250,238,218,.45)}
+    .fl{display:flex;gap:18px}
+    .fl a{font-size:12px;color:rgba(250,238,218,.45);text-decoration:none}
+    .fl a:hover{color:var(--al)}
+    @media(max-width:700px){
+      .nav-links{display:none;flex-direction:column;position:absolute;top:58px;left:0;right:0;background:var(--bd);padding:8px 0 16px}
+      .nav-links.open{display:flex}
+      .nav-links a{height:44px;padding:0 24px;border-bottom:none}
+      .dd{position:static;box-shadow:none;border:none;background:rgba(255,255,255,.08);border-radius:0}
+      .dd a{color:rgba(250,238,218,.8)}
+      .nav-toggle{display:block}
+      .nav-lang{display:none}
+      .nav{position:relative}
+      .about-inner{flex-direction:column}
+      .content{padding:32px 20px}
+      .about-hero{padding:32px 20px}
+      .cta{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <a href="/zh/" class="nav-logo">
+    <svg viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg"><circle cx="55" cy="60" r="42" fill="none" stroke="#EF9F27" stroke-width="2"/><ellipse cx="55" cy="60" rx="17" ry="42" fill="none" stroke="#EF9F27" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/><line x1="13" y1="60" x2="97" y2="60" stroke="#EF9F27" stroke-width="1" stroke-dasharray="3,3" opacity="0.5"/><g transform="translate(18,8) scale(0.172)" fill="#FAEEDA"><path d="M262.938,232.35c5.536,7.225,13.896,11.584,22.41,11.962c0.925,0.096,1.85,0.144,2.75,0.144l2.39-0.107c3.153-0.204,6.077-0.883,8.798-2.042l61.65-31.588c15.517-7.989,22.116-27.166,14.682-42.754l-3.141-6.641c-5.212-10.926-15.96-17.727-28.06-17.727c-5.002,0-10.028,1.234-14.538,3.552l-23.148,11.881l-10.797-26.121c-2.197-4.636-5.146-8.73-8.58-12.262c26.913-5.692,47.222-30.312,47.222-59.711C334.576,27.331,308.07,0,275.471,0C242.87,0,216.38,27.331,216.38,60.934c0,8.253,1.604,16.105,4.495,23.274c-3.378-0.339-6.765-0.192-10.067,0.588c-1.015-0.084-2.042-0.126-3.086-0.126h-96.587c-4.735,0-9.4,0.742-13.922,2.207c-8.644,1.966-16.054,7.71-20.107,15.321c-0.73,1.177-1.333,2.393-1.925,3.759c-1.667,3.855-2.471,7.575-2.471,11.325v69.667c0,17.99,13.946,32.633,31.12,32.633h7.106c17.156,0,31.12-14.643,31.12-32.633v-29.349h19.912l-38.695,77.378c-3.894,7.565-4.576,16.272-2.03,24.379c-0.006,0.096-0.006,0.204-0.006,0.301v37.902H86.908c-19.774,0-35.855,16.5-35.855,36.772v9.271c0,20.296,16.081,36.786,35.855,36.786h79.125c19.756,0,35.84-16.496,35.84-36.786V322.95l92.206,95.837c6.786,7.062,15.854,10.94,25.515,10.94c9.668,0,18.741-3.879,25.532-10.94l6.299-6.552c13.697-14.237,13.697-37.439,0-51.677L242.967,247.866l12.851-25.665C257.738,225.889,260.128,229.306,262.938,232.35z"/></g></svg>
+    <span><span class="nav-logo-zh">美国老潘跑腿</span><span class="nav-logo-en">Peter AssistInUSA</span></span>
+  </a>
+  <div class="nav-links" id="nav-links">
+    <a href="/zh/">首页</a>
+    <span class="nav-dropdown"><a href="/zh/online/">网络代劳</a><div class="dd"><a href="/zh/online/#misc">网络杂项</a><a href="/zh/online/#publish">网络发布</a><a href="/zh/online/#tech">网络技术</a><a href="/zh/online/#shopping">网络代购</a></div></span>
+    <span class="nav-dropdown"><a href="/zh/onsite/">奥兰多代劳</a><div class="dd"><a href="/zh/onsite/#cargo">奥兰多货物处理</a><a href="/zh/onsite/#care">奥兰多本地照顾</a><a href="/zh/onsite/#biz">奥兰多商务协助</a><a href="/zh/onsite/#realestate">奥兰多房地产物业</a></div></span>
+    <a href="/zh/pricing/">收费准则</a><a href="/zh/about/" class="active">关于我</a><a href="/zh/contact/">联系我</a><a href="/zh/blog/">博客</a><a href="/zh/disclaimer/">免责声明</a>
+  </div>
+  <a href="/en/" class="nav-lang">EN / 中文</a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
+</nav>
+
+<div class="about-hero">
+  <div class="about-inner">
+    <div class="avatar">潘</div>
+    <div>
+      <div class="bc"><a href="/zh/">首页</a> › 关于我</div>
+      <div class="about-name">Peter 潘</div>
+      <div class="about-sub">美国老潘跑腿 · 奥兰多，佛罗里达</div>
+      <div class="tags">
+        <span class="tag">📍 佛州奥兰多</span>
+        <span class="tag">💻 IT背景</span>
+        <span class="tag">🗣 中英双语</span>
+        <span class="tag">🏢 企业管理经验</span>
+        <span class="tag">59岁</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="section">
+    <h2>自我介绍</h2>
+    <p>各位好，我姓潘，来自广州，英文名叫Peter，移民美国多年，曾从事多项工作，包括企业管理、IT编程。今年59岁，因为AI的发展而光荣退休了，现长住佛罗里达州奥兰多。英语能沟通，熟悉电脑，美国生活也算摸熟了。</p>
+    <p>为了发光发热，燃烧自己，补充一下因为美伊战争而涨价的油费，现在决定为诸位做点力所能及的小事实事，包括网络的线上杂务、代买代寄、奥兰多货物处理和本地跑腿。</p>
+  </div>
+
+  <div class="section">
+    <h2>服务说明</h2>
+    <p><strong>个人代劳，不接大单。</strong>本服务由我个人独立提供，不是团队运营。主打帮大家解决细碎的实在事，不接大单，不画大饼，也不打包票。</p>
+    <p><strong>越小的需求越好。</strong>越简单不烧脑，年纪大了，不想太费神。</p>
+    <p><strong>先沟通，后报价，再接单。</strong>因为每个需求都有其独特性，无法标准化/量化，所以每个需求都需要提前沟通。我能做、有把握的才接。做不了的我会明确告知，绝不硬扛，不耽误您的时间。</p>
+  </div>
+
+  <div class="quote">图个踏实，随缘合作：退休了干点杂活，图的就是一个清静和安心，能安心睡觉比什么都强。有事您说话，没事想找我唠唠嗑、聊聊天也随时欢迎，有空就唠叨唠叨！</div>
+
+  <div class="section">
+    <h2>回复时间</h2>
+    <p>我会尽快回复每位客户，但因为时差关系，美东时间与中国时区相差12个小时，白天与深夜颠倒，请理解。通常我会在醒来后尽快处理所有消息。</p>
+  </div>
+</div>
+
+<div class="cta">
+  <div class="cta-t">想找我唠唠？随时欢迎<span>有事说事，没事聊天也行</span></div>
+  <a href="/zh/contact/" class="btn">联系我 →</a>
+</div>
+<footer>
+  <span class="fc">© 2026 美国老潘跑腿 · Peter AssistInUSA · 奥兰多，佛罗里达</span>
+  <div class="fl"><a href="/zh/disclaimer/">免责声明</a><a href="/zh/pricing/">收费准则</a><a href="/zh/blog/">博客</a></div>
+</footer>
+<script>const t=document.getElementById('nav-toggle'),l=document.getElementById('nav-links');t.addEventListener('click',()=>l.classList.toggle('open'));</script>
+</body>
+</html>
+ 
