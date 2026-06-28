@@ -9,17 +9,17 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --brown-dark:   #7A3B1E;
-      --brown-deeper: #5C2B12;
-      --brown-mid:    #D85A30;
-      --amber:        #EF9F27;
-      --amber-light:  #FAEEDA;
-      --cream:        #FDF3E7;
-      --cream-light:  #FFFBF7;
-      --text-dark:    #412402;
-      --text-mid:     #633806;
-      --text-muted:   #854F0B;
-      --border:       #F5C4B3;
+      --brown-dark:   #2563EB;
+      --brown-deeper: #1D4ED8;
+      --brown-mid:    #3B82F6;
+      --amber:        #F59E0B;
+      --amber-light:  #EFF6FF;
+      --cream:        #F8FAFC;
+      --cream-light:  #FFFFFF;
+      --text-dark:    #0F172A;
+      --text-mid:     #334155;
+      --text-muted:   #64748B;
+      --border:       #CBD5E1;
     }
 
     html { scroll-behavior: smooth; }
@@ -55,11 +55,11 @@
     .nav-logo svg { width: 38px; height: 38px; }
     .nav-logo-text { line-height: 1.25; }
     .nav-logo-zh { color: var(--amber-light); font-size: 14px; font-weight: 600; display: block; }
-    .nav-logo-en { color: rgba(250,238,218,0.55); font-size: 10px; display: block; }
+    .nav-logo-en { color: rgba(255,255,255,0.6); font-size: 10px; display: block; }
 
     .nav-links { display: flex; align-items: center; gap: 0; flex: 1; }
     .nav-links a {
-      color: rgba(250,238,218,0.8);
+      color: rgba(255,255,255,0.9);
       font-size: 13px;
       padding: 0 12px;
       height: 58px;
@@ -166,7 +166,7 @@
     .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
     .btn-primary {
       background: var(--brown-dark);
-      color: var(--amber-light);
+      color: #ffffff;
       font-size: 14px;
       padding: 12px 28px;
       border-radius: 8px;
@@ -280,7 +280,7 @@
       width: 40px; height: 40px;
       border-radius: 50%;
       background: var(--brown-dark);
-      color: var(--amber-light);
+      color: #ffffff;
       font-size: 17px;
       font-weight: 600;
       display: flex; align-items: center; justify-content: center;
@@ -333,7 +333,7 @@
     .contact-items { display: flex; gap: 24px; flex-wrap: wrap; }
     .contact-item {
       display: flex; align-items: center; gap: 8px;
-      font-size: 13px; color: var(--amber-light);
+      font-size: 13px; color: rgba(255,255,255,0.9);
       text-decoration: none;
     }
     .contact-item svg { width: 16px; height: 16px; color: var(--amber); flex-shrink: 0; }
@@ -393,6 +393,38 @@
     }
 
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+    /* ── PROMO BANNERS ── */
+    .promo-banner {
+      background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+      color: #ffffff;
+      padding: 28px 32px;
+      text-align: center;
+    }
+    .promo-banner p {
+      font-size: 19px;
+      font-weight: 600;
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+    }
+    .promo-banner-light {
+      background: #EFF6FF;
+      border-top: 3px solid #2563EB;
+      border-bottom: 3px solid #2563EB;
+      padding: 28px 32px;
+      text-align: center;
+    }
+    .promo-banner-light p {
+      font-size: 19px;
+      font-weight: 600;
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.7;
+      color: #1D4ED8;
+      letter-spacing: 0.02em;
+    }
   </style>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 110'%3E%3Ccircle cx='55' cy='60' r='42' fill='%237A3B1E'/%3E%3Cg transform='translate(18,8) scale(0.172)' fill='%23FAEEDA'%3E%3Cpath d='M262.938,232.35c5.536,7.225,13.896,11.584,22.41,11.962c0.925,0.096,1.85,0.144,2.75,0.144l2.39-0.107c3.153-0.204,6.077-0.883,8.798-2.042l61.65-31.588c15.517-7.989,22.116-27.166,14.682-42.754l-3.141-6.641c-5.212-10.926-15.96-17.727-28.06-17.727c-5.002,0-10.028,1.234-14.538,3.552l-23.148,11.881l-10.797-26.121c-2.197-4.636-5.146-8.73-8.58-12.262c26.913-5.692,47.222-30.312,47.222-59.711C334.576,27.331,308.07,0,275.471,0C242.87,0,216.38,27.331,216.38,60.934c0,8.253,1.604,16.105,4.495,23.274c-3.378-0.339-6.765-0.192-10.067,0.588c-1.015-0.084-2.042-0.126-3.086-0.126h-96.587c-4.735,0-9.4,0.742-13.922,2.207c-8.644,1.966-16.054,7.71-20.107,15.321c-0.73,1.177-1.333,2.393-1.925,3.759c-1.667,3.855-2.471,7.575-2.471,11.325v69.667c0,17.99,13.946,32.633,31.12,32.633h7.106c17.156,0,31.12-14.643,31.12-32.633v-29.349h19.912l-38.695,77.378c-3.894,7.565-4.576,16.272-2.03,24.379c-0.006,0.096-0.006,0.204-0.006,0.301v37.902H86.908c-19.774,0-35.855,16.5-35.855,36.772v9.271c0,20.296,16.081,36.786,35.855,36.786h79.125c19.756,0,35.84-16.496,35.84-36.786V322.95l92.206,95.837c6.786,7.062,15.854,10.94,25.515,10.94c9.668,0,18.741-3.879,25.532-10.94l6.299-6.552c13.697-14.237,13.697-37.439,0-51.677L242.967,247.866l12.851-25.665C257.738,225.889,260.128,229.306,262.938,232.35z'/%3E%3C/g%3E%3C/svg%3E">
 </head>
@@ -500,6 +532,11 @@
   </div>
 </div>
 
+<!-- PROMO BANNER 1 -->
+<div class="promo-banner">
+  <p>⏱️ 您的时间宝贵，不应浪费在非主力业务的事务上</p>
+</div>
+
 <!-- SERVICES -->
 <section class="services">
   <div class="section-header">
@@ -548,6 +585,11 @@
   </div>
 </section>
 
+<!-- PROMO BANNER 2 -->
+<div class="promo-banner-light">
+  <p>💡 我会处理那些耗费您精力的任务，让您可以专注于重要的事情</p>
+</div>
+
 <!-- HOW -->
 <section class="how">
   <div class="section-header">
@@ -582,6 +624,11 @@
     </div>
   </div>
 </section>
+
+<!-- PROMO BANNER 3 -->
+<div class="promo-banner">
+  <p>🚀 老潘跑腿的设计之初，就旨在节省您的时间，帮助您取得更多成就</p>
+</div>
 
 <!-- ABOUT -->
 <section style="background:var(--cream-light); padding: 52px 32px;">
@@ -620,7 +667,7 @@
   <a href="/zh/contact/" class="contact-btn">立即联系我 →</a>
 </div>
 
-<div style="background:#412402;padding:36px 32px;text-align:center"><h3 style="font-size:20px;font-weight:700;color:#EF9F27;margin-bottom:12px">&#129309; 欢迎各种形式的合作</h3><p style="font-size:15px;color:#FAEEDA;line-height:1.9;max-width:640px;margin:0 auto">只要合法合规，一切合作形式都可以沟通商量。无论是长期合作、项目合作、转介绍合作，还是其他任何你想到的方式，欢迎随时联系我，我们一起来谈。</p></div>
+<div style="background:#1D4ED8;padding:36px 32px;text-align:center"><h3 style="font-size:20px;font-weight:700;color:#ffffff;margin-bottom:12px">&#129309; 欢迎各种形式的合作</h3><p style="font-size:15px;color:rgba(255,255,255,0.9);line-height:1.9;max-width:640px;margin:0 auto">只要合法合规，一切合作形式都可以沟通商量。无论是长期合作、项目合作、转介绍合作，还是其他任何你想到的方式，欢迎随时联系我，我们一起来谈。</p></div>
 <!-- FOOTER -->
 <footer style="background:var(--cream);border-top:1px solid var(--border)">
   <div style="max-width:900px;margin:0 auto;padding:36px 32px 0">
