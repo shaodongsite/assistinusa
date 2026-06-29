@@ -24,7 +24,7 @@
     .nav-dropdown:hover .dd{display:block}
     .dd a{display:block;padding:9px 18px;font-size:13px;color:var(--td) !important;text-decoration:none;height:auto;border:none !important;white-space:nowrap;background:transparent}
     .dd a:hover{background:var(--cr);color:var(--bd) !important}
-    .nav-lang{margin-left:auto;background:rgba(255,255,255,.12);color:var(--al);font-size:12px;padding:5px 12px;border-radius:20px;text-decoration:none}
+    .nav-lang-dd{position:relative;margin-left:auto}.nav-lang-btn{background:rgba(255,255,255,.12);color:#fff;font-size:12px;padding:5px 14px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:5px;border:none;font-family:inherit;white-space:nowrap}.lang-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:.5px solid #CBD5E1;border-radius:10px;min-width:140px;padding:6px 0;box-shadow:0 4px 16px rgba(0,0,0,.1);z-index:300}.nav-lang-dd:hover .lang-menu{display:block}.lang-menu a{display:block;padding:9px 18px;font-size:13px;color:#0F172A;text-decoration:none;white-space:nowrap}.lang-menu a:hover{background:#F8FAFC}.lang-menu a.lang-cur{font-weight:700;color:#2563EB}
     .nav-toggle{display:none;background:none;border:none;color:var(--al);font-size:22px;cursor:pointer;margin-left:auto;padding:4px}
     .hero{background:var(--cr);border-bottom:1px solid var(--br);padding:48px 32px 40px}
     .hero-inner{max-width:780px;margin:0 auto}
@@ -87,7 +87,7 @@
     <a href="/zh/clients/">服务对象</a>
     <a href="/zh/pricing/">收费准则</a><a href="/zh/about/">关于我</a><a href="/zh/contact/">联系我</a><a href="/zh/blog/">博客</a><a href="/zh/disclaimer/">服务声明</a>
   </div>
-  <a href="/en/" class="nav-lang">EN / 中文</a>
+  <div class="nav-lang-dd"><button class="nav-lang-btn">🌐 语言 ▾</button><div class="lang-menu"><a href="/zh/onsite/" class="lang-cur">🇨🇳 中文</a><a href="/en/onsite/">🇺🇸 English</a></div></div>
   <button class="nav-toggle" id="nav-toggle" aria-label="菜单">☰</button>
 </nav>
 

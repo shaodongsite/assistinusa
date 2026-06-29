@@ -8,15 +8,15 @@
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 110 110'%3E%3Ccircle cx='55' cy='60' r='42' fill='%237A3B1E'/%3E%3Cg transform='translate(18,8) scale(0.172)' fill='%23FAEEDA'%3E%3Cpath d='M262.938,232.35c5.536,7.225,13.896,11.584,22.41,11.962c0.925,0.096,1.85,0.144,2.75,0.144l2.39-0.107c3.153-0.204,6.077-0.883,8.798-2.042l61.65-31.588c15.517-7.989,22.116-27.166,14.682-42.754l-3.141-6.641c-5.212-10.926-15.96-17.727-28.06-17.727c-5.002,0-10.028,1.234-14.538,3.552l-23.148,11.881l-10.797-26.121c-2.197-4.636-5.146-8.73-8.58-12.262c26.913-5.692,47.222-30.312,47.222-59.711C334.576,27.331,308.07,0,275.471,0C242.87,0,216.38,27.331,216.38,60.934c0,8.253,1.604,16.105,4.495,23.274c-3.378-0.339-6.765-0.192-10.067,0.588c-1.015-0.084-2.042-0.126-3.086-0.126h-96.587c-4.735,0-9.4,0.742-13.922,2.207c-8.644,1.966-16.054,7.71-20.107,15.321c-0.73,1.177-1.333,2.393-1.925,3.759c-1.667,3.855-2.471,7.575-2.471,11.325v69.667c0,17.99,13.946,32.633,31.12,32.633h7.106c17.156,0,31.12-14.643,31.12-32.633v-29.349h19.912l-38.695,77.378c-3.894,7.565-4.576,16.272-2.03,24.379c-0.006,0.096-0.006,0.204-0.006,0.301v37.902H86.908c-19.774,0-35.855,16.5-35.855,36.772v9.271c0,20.296,16.081,36.786,35.855,36.786h79.125c19.756,0,35.84-16.496,35.84-36.786V322.95l92.206,95.837c6.786,7.062,15.854,10.94,25.515,10.94c9.668,0,18.741-3.879,25.532-10.94l6.299-6.552c13.697-14.237,13.697-37.439,0-51.677L242.967,247.866l12.851-25.665C257.738,225.889,260.128,229.306,262.938,232.35z'/%3E%3C/g%3E%3C/svg%3E">
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--bd:#7A3B1E;--bd2:#5C2B12;--bm:#D85A30;--am:#EF9F27;--al:#FAEEDA;--cr:#FDF3E7;--cl:#FFFBF7;--td:#412402;--tm:#633806;--tu:#854F0B;--br:#F5C4B3}
+    :root{--bd:#2563EB;--bd2:#1D4ED8;--bm:#3B82F6;--am:#F59E0B;--al:#EFF6FF;--cr:#F8FAFC;--cl:#FFFFFF;--td:#0F172A;--tm:#334155;--tu:#64748B;--br:#CBD5E1}
     body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--cl);color:var(--td);font-size:16px;line-height:1.7}
     .nav{background:var(--bd);display:flex;align-items:center;padding:0 32px;height:58px;position:sticky;top:0;z-index:100;gap:4px}
     .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:20px;flex-shrink:0}
     .nav-logo svg{width:38px;height:38px}
     .nav-logo-en{color:var(--al);font-size:14px;font-weight:600;display:block}
-    .nav-logo-zh{color:rgba(250,238,218,.55);font-size:10px;display:block}
+    .nav-logo-zh{color:rgba(255,255,255,0.6);font-size:10px;display:block}
     .nav-links{display:flex;align-items:center;flex:1}
-    .nav-links a{color:rgba(250,238,218,.8);font-size:13px;padding:0 12px;height:58px;display:flex;align-items:center;text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent}
+    .nav-links a{color:rgba(255,255,255,0.9);font-size:13px;padding:0 12px;height:58px;display:flex;align-items:center;text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent}
     .nav-links a:hover,.nav-links a.active{color:var(--al)}
     .nav-links a.active{border-bottom-color:var(--am)}
     .nav-dropdown{position:relative}
@@ -25,7 +25,17 @@
     .nav-dropdown:hover .dd{display:block}
     .dd a{display:block;padding:9px 18px;font-size:13px;color:var(--td) !important;text-decoration:none;height:auto;border:none !important;white-space:nowrap;background:transparent}
     .dd a:hover{background:var(--cr);color:var(--bd) !important}
-    .nav-lang{margin-left:auto;background:rgba(255,255,255,.12);color:var(--al);font-size:12px;padding:5px 12px;border-radius:20px;text-decoration:none}
+    .nav-lang-dd{position:relative;margin-left:auto}
+    .nav-lang-btn{background:rgba(255,255,255,.12);color:#fff;font-size:12px;padding:5px 14px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:5px;border:none;font-family:inherit;white-space:nowrap}
+    .lang-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:.5px solid #CBD5E1;border-radius:10px;min-width:140px;padding:6px 0;box-shadow:0 4px 16px rgba(0,0,0,.1);z-index:300}
+    .nav-lang-dd:hover .lang-menu{display:block}
+    .lang-menu a{display:block;padding:9px 18px;font-size:13px;color:#0F172A;text-decoration:none;white-space:nowrap}
+    .lang-menu a:hover{background:#F8FAFC}
+    .lang-menu a.lang-cur{font-weight:700;color:#2563EB}
+    .promo-banner{background:linear-gradient(135deg,#2563EB 0%,#1D4ED8 100%);color:#fff;padding:28px 32px;text-align:center}
+    .promo-banner p{font-size:19px;font-weight:600;max-width:680px;margin:0 auto;line-height:1.7}
+    .promo-banner-light{background:#EFF6FF;border-top:3px solid #2563EB;border-bottom:3px solid #2563EB;padding:28px 32px;text-align:center}
+    .promo-banner-light p{font-size:19px;font-weight:600;max-width:680px;margin:0 auto;line-height:1.7;color:#1D4ED8}
     .nav-toggle{display:none;background:none;border:none;color:var(--al);font-size:22px;cursor:pointer;margin-left:auto;padding:4px}
     .banner{background:var(--am);padding:10px 32px;display:flex;align-items:center;gap:12px}
     .banner-date{font-size:13px;color:var(--tm);font-weight:600;white-space:nowrap}
@@ -36,7 +46,7 @@
     .hero h1{font-size:32px;font-weight:700;color:var(--td);margin-bottom:12px}
     .hero-sub{font-size:16px;color:var(--tu);line-height:1.9;max-width:480px;margin:0 auto 32px}
     .hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-    .btn-p{background:var(--bd);color:var(--al);font-size:14px;padding:12px 28px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;display:inline-block}
+    .btn-p{background:var(--bd);color:#ffffff;font-size:14px;padding:12px 28px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;display:inline-block}
     .btn-o{background:transparent;color:var(--bd);font-size:14px;padding:12px 28px;border-radius:8px;border:1.5px solid var(--bd);cursor:pointer;text-decoration:none;display:inline-block}
     .trust{background:#fff;border-bottom:1px solid var(--br);padding:16px 32px;display:flex;justify-content:center;gap:32px;flex-wrap:wrap}
     .trust-item{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--tu)}
@@ -56,7 +66,7 @@
     .how{background:var(--cr);border-top:1px solid var(--br);border-bottom:1px solid var(--br);padding:52px 32px}
     .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:20px;max-width:900px;margin:28px auto 0}
     .step{text-align:center;padding:0 8px}
-    .step-num{width:40px;height:40px;border-radius:50%;background:var(--bd);color:var(--al);font-size:17px;font-weight:600;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+    .step-num{width:40px;height:40px;border-radius:50%;background:var(--bd);color:#ffffff;font-size:17px;font-weight:600;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
     .step-title{font-size:15px;font-weight:600;color:var(--td);margin-bottom:6px}
     .step-desc{font-size:13px;color:var(--tu);line-height:1.7}
     .about-sec{background:var(--cl);padding:52px 32px}
@@ -68,7 +78,7 @@
     .about-tag{font-size:12px;background:var(--al);color:var(--tm);padding:4px 12px;border-radius:20px}
     .cta-bar{background:var(--bd);padding:24px 32px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
     .cta-contacts{display:flex;gap:24px;flex-wrap:wrap}
-    .cta-link{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--al);text-decoration:none}
+    .cta-link{display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.9);text-decoration:none}
     .cta-btn{background:var(--am);color:var(--td);font-size:13px;font-weight:600;padding:10px 22px;border-radius:8px;border:none;cursor:pointer;text-decoration:none;display:inline-block;white-space:nowrap}
     footer{background:var(--bd2);padding:18px 32px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
     .fc{font-size:12px;color:rgba(250,238,218,.45)}
@@ -111,7 +121,13 @@
     <a href="/en/blog/">Blog</a>
     <a href="/en/disclaimer/">Service Declaration</a>
   </div>
-  <a href="/zh/" class="nav-lang">中文 / EN</a>
+  <div class="nav-lang-dd">
+    <button class="nav-lang-btn">🌐 Language ▾</button>
+    <div class="lang-menu">
+      <a href="/en/" class="lang-cur">🇺🇸 English</a>
+      <a href="/zh/">🇨🇳 中文</a>
+    </div>
+  </div>
   <button class="nav-toggle" id="nav-toggle" aria-label="Menu">☰</button>
 </nav>
 
@@ -138,6 +154,10 @@
   <div class="trust-item">💬 Quick replies — please allow for time zone differences</div>
 </div>
 
+<div class="promo-banner">
+  <p>⏱️ Your time is too valuable to spend on non-core tasks — let me handle them for you</p>
+</div>
+
 <section class="services">
   <div class="sec-hd">
     <h2>Two Service Categories</h2>
@@ -157,6 +177,10 @@
   </div>
 </section>
 
+<div class="promo-banner-light">
+  <p>💡 I handle the tasks that drain your energy, so you can focus on what truly matters</p>
+</div>
+
 <section class="how">
   <div class="sec-hd"><h2>How It Works</h2><p>Five simple steps</p></div>
   <div class="steps">
@@ -167,6 +191,10 @@
     <div class="step"><div class="step-num">5</div><div class="step-title">I Get to Work</div><div class="step-desc">I start immediately after payment and report back when done</div></div>
   </div>
 </section>
+
+<div class="promo-banner">
+  <p>🚀 Peter AssistInUSA was built from day one to save your time and help you achieve more</p>
+</div>
 
 <section class="about-sec">
   <div class="about-inner">
@@ -194,7 +222,7 @@
   <a href="/en/contact/" class="cta-btn">Contact Me Now →</a>
 </div>
 
-<div style="background:#412402;padding:36px 32px;text-align:center"><h3 style="font-size:20px;font-weight:700;color:#EF9F27;margin-bottom:12px">🤝 Open to All Forms of Collaboration</h3><p style="font-size:15px;color:#FAEEDA;line-height:1.9;max-width:640px;margin:0 auto">As long as it's legal and compliant, any form of collaboration is open for discussion. Feel free to reach out and let's talk.</p></div>
+<div style="background:#1D4ED8;padding:36px 32px;text-align:center"><h3 style="font-size:20px;font-weight:700;color:#ffffff;margin-bottom:12px">🤝 Open to All Forms of Collaboration</h3><p style="font-size:15px;color:rgba(255,255,255,0.9);line-height:1.9;max-width:640px;margin:0 auto">As long as it's legal and compliant, any form of collaboration is open for discussion. Feel free to reach out and let's talk.</p></div>
 <footer style="background:var(--cr);border-top:1px solid var(--br)">
   <div style="max-width:900px;margin:0 auto;padding:36px 32px 0">
     <div style="display:grid;grid-template-columns:1.1fr 1fr 0.8fr 1fr;gap:0;border-bottom:1px solid var(--br);padding-bottom:32px">
@@ -222,7 +250,7 @@
       <div style="padding-left:28px">
         <p style="font-size:12px;font-weight:600;color:var(--tu);margin:0 0 14px;letter-spacing:.06em">Subscribe</p>
         <input type="email" placeholder="Your email address" style="width:100%;box-sizing:border-box;font-size:13px;padding:8px 12px;border:.5px solid var(--br);border-radius:8px;background:#fff;color:var(--td);margin-bottom:8px;outline:none">
-        <a href="mailto:peter@assistinusa.com?subject=Subscribe" style="display:block;width:100%;box-sizing:border-box;background:var(--bd);color:var(--al);font-size:13px;font-weight:600;padding:8px;border-radius:8px;text-decoration:none;text-align:center">Subscribe</a>
+        <a href="mailto:peter@assistinusa.com?subject=Subscribe" style="display:block;width:100%;box-sizing:border-box;background:var(--bd);color:#ffffff;font-size:13px;font-weight:600;padding:8px;border-radius:8px;text-decoration:none;text-align:center">Subscribe</a>
       </div>
     </div>
     <div style="padding:14px 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
