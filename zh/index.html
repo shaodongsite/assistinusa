@@ -104,7 +104,7 @@
     .nav-lang-dd{position:relative;margin-left:auto}
     .nav-lang-btn{background:rgba(255,255,255,.12);color:#fff;font-size:12px;padding:5px 14px;border-radius:20px;cursor:pointer;display:flex;align-items:center;gap:5px;border:none;font-family:inherit;white-space:nowrap}
     .lang-menu{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:.5px solid #CBD5E1;border-radius:10px;min-width:140px;padding:6px 0;box-shadow:0 4px 16px rgba(0,0,0,.1);z-index:300}
-    .nav-lang-dd:hover .lang-menu{display:block}
+    .lang-menu.open{display:block}
     .lang-menu a{display:block;padding:9px 18px;font-size:13px;color:#0F172A;text-decoration:none;white-space:nowrap}
     .lang-menu a:hover{background:#F8FAFC}
     .lang-menu a.lang-cur{font-weight:700;color:#2563EB}
@@ -734,6 +734,18 @@
   toggle.addEventListener('click', () => {
     links.classList.toggle('open');
   });
+  // 语言下拉菜单：点击触发
+  const langBtn = document.querySelector('.nav-lang-btn');
+  const langMenu = document.querySelector('.lang-menu');
+  if (langBtn && langMenu) {
+    langBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      langMenu.classList.toggle('open');
+    });
+    document.addEventListener('click', function() {
+      langMenu.classList.remove('open');
+    });
+  }
 </script>
 </body>
 </html>
