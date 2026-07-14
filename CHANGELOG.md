@@ -16,6 +16,18 @@
 
 ## 改动记录
 
+### 2026-07-13 — zh/en更新：暑假通知样式优化、pricing底部横幅简化、退款保证排序调整
+
+- **类型**：内容更新，仅限 zh 和 en
+- **涉及页面**：zh/index.html、en/index.html、zh/pricing/index.html、en/pricing/index.html
+- **内容说明**：
+  - 暑假公告：颜色由暗红改为暖谙橙色（#D97706），日期改为7月15日～8月20日，添加“休假期间仍可联络沟通”说明
+  - pricing底部横幅：zh改为「您的时间宝贵，不应浪费在小事上--让老潘来」，en改为「Your time is too valuable to waste on small tasks — let Peter handle it」
+  - 退款保证排序调整：全额退款两条移至最前，半额退款条移至最后
+- **部署状态**：✅ 已 git push，commit `9f5511d`，上线确认
+
+---
+
 ### 2026-07-13 — 全站内容更新：暑假停服公告、退款保证增2条、合作板块文字全语种更新
 
 - **类型**：内容更新 + 全站批量修改
