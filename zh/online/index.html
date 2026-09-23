@@ -36,46 +36,276 @@
 
   <div class="sec-block" id="ecommerce">
     <div class="sec-header">🛒 美区Etsy / Shopify 批量上架｜可与FBA仓配套</div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px">
+      <span style="background:var(--td);color:#fff;font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;display:inline-flex;align-items:center;gap:6px"><span style="width:6px;height:6px;border-radius:50%;background:#34D399"></span>奥兰多本地 · 100个起算</span>
+      <span style="background:var(--cr);border:1px solid var(--br);color:var(--tu);font-size:11px;padding:4px 12px;border-radius:20px">📦 FBA Orlando</span>
+      <span style="background:var(--cr);border:1px solid var(--br);color:var(--tu);font-size:11px;padding:4px 12px;border-radius:20px">🏪 Etsy Seller</span>
+      <span style="background:var(--cr);border:1px solid var(--br);color:var(--tu);font-size:11px;padding:4px 12px;border-radius:20px">🛍️ Shopify</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px">
+      <span style="background:var(--td);color:#fff;font-size:13px;font-weight:600;padding:6px 14px;border-radius:20px">纯上架 参考价$199/100个</span>
+      <span style="background:var(--cr);border:1px solid var(--br);color:var(--tm);font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px">含标题SEO 参考价$349</span>
+      <span style="background:var(--cr);border:1px solid var(--br);color:var(--tm);font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px">含白底图 参考价$449</span>
+      <span style="background:#FFFBEB;border:1px solid #FDE68A;color:#92400E;font-size:13px;font-weight:500;padding:6px 14px;border-radius:20px">单张微信加急 参考价$13/个</span>
+    </div>
     <div class="cards">
-      <div class="card-full">
-        <div class="card-desc">纯上架 <span class="price">参考价$199/100个</span>｜含标题SEO <span class="price">参考价$349</span>｜含白底图 <span class="price">参考价$449</span>｜单张微信加急 <span class="price">参考价$13/个</span><br><br>
-        上架到Etsy/Shopify，不接Amazon排名保证单。只认CSV批量导，100个3分钟导完，支持Etsy Renew续费置顶（<span class="price">参考价$0.2/次</span>另计）。微信单张可接，但必须发原图，额外收 <span class="price">参考价$5/张</span> 整理费</div>
+      <div class="card-full" style="display:flex;flex-wrap:wrap;gap:20px"><div style="flex:1;min-width:220px;display:flex;flex-direction:column;gap:10px;font-size:13.5px;line-height:1.7;color:var(--tm)">
+        <div style="display:flex;gap:8px"><strong style="color:var(--td);flex-shrink:0">01.</strong><span>货在奥兰多仓，顺手帮你上架到Etsy/Shopify，<u style="text-decoration-color:var(--br)">不接Amazon排名保证单</u>。</span></div>
+        <div style="display:flex;gap:8px"><strong style="color:var(--td);flex-shrink:0">02.</strong><span>只认CSV批量导，100个3分钟导完，支持Etsy Renew续费置顶（参考价$0.2/次另计）。</span></div>
+        <div style="display:flex;gap:8px"><strong style="color:var(--td);flex-shrink:0">03.</strong><span>微信单张可接，但必须发原图，额外收<span style="background:var(--td);color:#fff;font-size:12px;padding:1px 7px;border-radius:5px">参考价$5/张整理费</span>。</span></div>
+      </div><div style="flex:0 0 260px;background:var(--cr);border:1px solid var(--br);border-radius:14px;padding:14px">
+        <div style="font-size:11px;font-weight:700;color:var(--tu);letter-spacing:.06em;margin-bottom:10px">📊 CSV 字段已定好</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;font-size:11px;font-family:monospace;margin-bottom:10px">
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">title</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">tags[13]</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">price</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">qty</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">sku</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">weight</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">image_urls</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">shopify_handle</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">seo_title</div>
+          <div style="background:#fff;border:1px solid var(--br);border-radius:5px;padding:4px 7px;color:var(--tm)">renew</div>
+        </div>
+        <div style="font-size:11px;color:var(--tu);line-height:1.6">模板不改列名，直接填。Etsy 限2000px+，Shopify自动压缩。</div>
+      </div></div>
+      <div class="card" style="display:flex;flex-direction:column">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px">
+          <div><div style="font-size:11px;color:var(--tu);letter-spacing:.06em;font-weight:600">BASIC LISTING</div><div class="card-title" style="font-size:16px;margin:2px 0 0">基础版</div><div style="font-size:12px;color:var(--tu);margin-top:2px">只做批量上架</div></div>
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--cr);border:1px solid var(--br);display:flex;align-items:center;justify-content:center;color:var(--tu);font-size:13px">✓</div>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:14px"><span class="price" style="font-size:24px">参考价$199</span><span style="font-size:12px;color:var(--tu)">/ 100个</span></div>
+        <div class="card-desc" style="flex:1;border-top:1px solid var(--br);padding-top:12px">
+          ✓ CSV一键导入，100个3分钟导完<br>✓ Etsy / Shopify 同步创建<br>✓ 价格、库存、重量自动填充<br>✓ 奥兰多FBA仓 SKU 对应<br>
+          <span style="color:#94A3B8">✕ 不含标题SEO</span><br><span style="color:#94A3B8">✕ 不含白底图处理</span>
+        </div>
       </div>
+      <div class="card" style="display:flex;flex-direction:column;background:var(--td);border:2px solid var(--td);color:#fff;position:relative">
+        <span style="position:absolute;top:-12px;left:20px;background:#fff;color:var(--td);font-size:10px;font-weight:700;padding:3px 12px;border-radius:20px;letter-spacing:.05em">⚡ 推荐最多</span>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px;margin-top:6px">
+          <div><div style="font-size:11px;color:rgba(255,255,255,.5);letter-spacing:.06em;font-weight:600">MOST POPULAR</div><div class="card-title" style="font-size:16px;margin:2px 0 0;color:#fff">SEO版</div><div style="font-size:12px;color:rgba(255,255,255,.6);margin-top:2px">含标题SEO，适合新品冷启动</div></div>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:14px"><span style="font-size:24px;font-weight:700;color:#fff">参考价$349</span><span style="font-size:12px;color:rgba(255,255,255,.5)">/ 100个</span></div>
+        <div style="flex:1;border-top:1px solid rgba(255,255,255,.15);padding-top:12px;font-size:13px;color:rgba(255,255,255,.85);line-height:1.9">
+          ✓ 包含基础版全部<br>✓ 标题SEO优化（Etsy 140字符）<br>✓ 13个Etsy标签 + Materials<br>✓ Shopify Handle / SEO标题 / 描述<br>✓ 支持Etsy Renew续费置顶逻辑
+        </div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px">
+          <div><div style="font-size:11px;color:var(--tu);letter-spacing:.06em;font-weight:600">WHITE-BG PRO</div><div class="card-title" style="font-size:16px;margin:2px 0 0">白底图版</div><div style="font-size:12px;color:var(--tu);margin-top:2px">含作图，2000px+合规上架</div></div>
+          <div style="width:28px;height:28px;border-radius:50%;background:var(--cr);border:1px solid var(--br);display:flex;align-items:center;justify-content:center;color:var(--tu);font-size:13px">✓</div>
+        </div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:14px"><span class="price" style="font-size:24px">参考价$449</span><span style="font-size:12px;color:var(--tu)">/ 100个</span></div>
+        <div class="card-desc" style="flex:1;border-top:1px solid var(--br);padding-top:12px">
+          ✓ 包含SEO版全部<br>✓ 白底图处理，2000px以上<br>✓ 保留自然阴影，Etsy审核通过率高<br>✓ 首图+次图排序已排好<br>✓ CSV内直接带图链接
+        </div>
+      </div>
+      <div class="card-full" style="background:#FFFBEB;border:1px solid #FDE68A;display:flex;gap:12px;align-items:flex-start">
+      <div style="width:32px;height:32px;border-radius:50%;background:#78350F;color:#FEF3C7;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px">⚠️</div>
+      <div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span style="font-size:13px;font-weight:700;color:#78350F">为什么不接微信压缩图？</span><span style="font-size:10px;background:#78350F;color:#FEF3C7;padding:2px 9px;border-radius:20px;font-weight:600">必读</span></div>
+        <p style="font-size:12.5px;color:#78350F;opacity:.85;line-height:1.6;margin-top:6px">微信会压到1080p，Etsy要求2000px以上，原图请发<strong>文件形式</strong>（不是图片消息）。微信单张加急每张多收 参考价$5 整理费，已含在 参考价$13/个 内。</p>
+        <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:8px">
+          <span style="background:#fff;border:1px solid #FDE68A;color:#78350F;font-size:11px;padding:3px 10px;border-radius:20px">🖼️ 要求：原图直出 2000px+</span>
+          <span style="background:#fff;border:1px solid #FDE68A;color:#78350F;font-size:11px;padding:3px 10px;border-radius:20px">📎 发送方式：微信"文件"</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div style="margin-top:14px;background:var(--cr);border:1px solid var(--br);border-radius:12px;padding:14px 18px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between">
+      <div style="font-size:12px;color:var(--tu);display:flex;align-items:center;gap:10px;flex-wrap:wrap"><span>📍 Orlando, FL 仓配</span><span style="color:var(--br)">|</span><span>100个起算 · 不接急单 · CSV为准</span></div>
+      <a href="/zh/contact/" style="background:var(--td);color:#fff;font-size:13px;font-weight:600;padding:9px 20px;border-radius:20px;text-decoration:none;white-space:nowrap">发CSV批量上架 →</a>
+    </div>
+    <div style="margin-top:10px;font-size:11px;color:var(--tu);display:flex;flex-wrap:wrap;gap:10px">
+      <span>Renew置顶 参考价$0.2/次 另计，Etsy官方扣费</span><span>·</span><span>Etsy / Shopify API 限速遵守平台规则</span><span>·</span><span>不支持Amazon Listing</span>
     </div>
   </div>
 
   <div class="sec-block" id="fix">
-    <div class="sec-header">🔧 网站小修复</div>
+    <div class="sec-header" style="display:flex;align-items:center;justify-content:space-between">🔧 网站小修复 <span style="font-size:12px;font-weight:500;color:var(--tu);background:#fff;border:1px solid var(--br);border-radius:20px;padding:3px 12px">单次单项 · 透明报价</span></div>
     <div class="cards">
       <div class="card">
-        <div class="card-title">换Logo</div>
-        <div class="card-desc"><span class="price">参考价$29/项</span></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px;gap:8px">
+          <div class="card-title" style="margin-bottom:0">换Logo</div>
+          <span style="background:#ecfdf5;color:#059669;border:1px solid #a7f3d0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap">1小时内完成</span>
+        </div>
+        <div style="margin-bottom:10px"><span class="price" style="font-size:22px">参考价$49</span><span class="price" style="font-size:14px">/项</span></div>
+        <div class="card-desc">含PC端+手机端+收藏图标，1次修改，不含重设计</div>
+        <div style="margin-top:14px;display:flex;align-items:center;gap:6px;font-size:12px;color:var(--tu)"><span style="width:6px;height:6px;border-radius:50%;background:#10b981;display:inline-block"></span>快速交付</div>
       </div>
       <div class="card">
-        <div class="card-title">被黑清理</div>
-        <div class="card-desc"><span class="price">参考价$299/项</span></div>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px;gap:8px">
+          <div class="card-title" style="margin-bottom:0">被黑清理</div>
+          <span style="background:#fef2f2;color:#dc2626;border:1px solid #fecaca;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap">急单</span>
+        </div>
+        <div style="margin-bottom:10px"><span class="price" style="font-size:22px">参考价$299</span><span class="price" style="font-size:14px">/站</span></div>
+        <div class="card-desc">单站WordPress，含清木马+后门清理+安全加固</div>
+        <div style="margin-top:10px;padding:8px 12px;background:var(--cr);border:1px solid var(--br);border-radius:8px;font-size:11.5px;color:var(--tu)">含7天复发免费复查，不含服务器Root级入侵/无备份重建</div>
       </div>
-      <div class="card-full">
-        <div class="card-title">插件冲突、SSL过期、备份恢复</div>
-        <div class="card-desc">均 <span class="price">参考价$49/单项</span></div>
+      <div class="card">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px;gap:8px">
+          <div class="card-title" style="margin-bottom:0">插件冲突、SSL过期、备份恢复</div>
+          <span style="background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0">最受欢迎</span>
+        </div>
+        <div style="margin-bottom:12px"><span style="font-size:13px;color:var(--tu);font-weight:500">均</span> <span class="price" style="font-size:19px">参考价$49</span><span class="price" style="font-size:13px">/单项</span></div>
+        <div class="card-desc" style="line-height:1.8">
+          · <strong>插件冲突：</strong>排查3个插件内，定位冲突源<br>
+          · <strong>SSL过期：</strong>含续期部署，不含证书购买费用<br>
+          · <strong>备份恢复：</strong>有备份文件情况下恢复
+        </div>
       </div>
+      <div class="card" style="background:#fcfcfd;border:1px dashed var(--br)">
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:10px;gap:8px">
+          <div class="card-title" style="margin-bottom:0">复杂/说不清的问题</div>
+          <span style="background:var(--cr);color:var(--tm);border:1px solid var(--br);font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px;white-space:nowrap">1对1</span>
+        </div>
+        <div style="margin-bottom:10px"><span class="price" style="font-size:22px">参考价$79</span><span class="price" style="font-size:14px">/小时</span></div>
+        <div class="card-desc">1小时起，适合定制、速度优化、多问题打包，透明计时</div>
+        <div style="margin-top:14px;display:flex;align-items:center;gap:8px">
+          <div style="flex:1;height:0;border-top:1px dashed var(--br)"></div>
+          <span style="font-size:11px;color:var(--tu);font-weight:500;white-space:nowrap">按小时计费 · 灵活结算</span>
+          <div style="flex:1;height:0;border-top:1px dashed var(--br)"></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:14px;background:#fff;border:1px solid var(--br);border-radius:12px;padding:14px 18px;display:flex;align-items:flex-start;gap:10px">
+      <span style="color:var(--tu);font-size:13px">ⓘ</span>
+      <p style="font-size:12.5px;color:var(--tu);line-height:1.6;margin:0">以上均为单次单项报价，需提供后台及主机访问权限，24小时内响应</p>
     </div>
   </div>
 
   <div class="sec-block" id="build">
-    <div class="sec-header">🌐 网站建设</div>
-    <div class="cards">
-      <div class="card-full">
-        <div class="card-desc">简单网站 <span class="price">参考价$499</span>，本网站为例三语种 <span class="price">参考价$899</span>。更多定制要求另议。</div>
+    <div class="sec-header" style="display:flex;align-items:center;justify-content:space-between">🌐 网站建设 <span style="font-size:12px;font-weight:500;color:var(--bd);background:var(--al);border:1px solid #bfdbfe;border-radius:20px;padding:3px 12px">奥兰多本地服务 · 中文支持</span></div>
+    <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr));align-items:stretch">
+      <div class="card" style="display:flex;flex-direction:column">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div style="width:36px;height:36px;border-radius:10px;background:var(--cr);border:1px solid var(--br);display:flex;align-items:center;justify-content:center;font-size:16px">⚡</div>
+          <span style="background:#ecfdf5;color:#059669;border:1px solid #a7f3d0;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">快速上线</span>
+        </div>
+        <div class="card-title" style="font-size:16px;margin-bottom:2px">简单网站 - 入门版</div>
+        <div style="font-size:11px;color:var(--tu);letter-spacing:.03em;margin-bottom:14px">STARTER / 5页以内</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:16px;flex-wrap:wrap">
+          <span class="price" style="font-size:26px">参考价$499</span>
+          <span style="font-size:13px;color:var(--tu);text-decoration:line-through">$799</span>
+          <span style="margin-left:auto;font-size:11px;background:var(--cr);color:var(--tm);padding:2px 8px;border-radius:20px">省$300</span>
+        </div>
+        <div class="card-desc" style="flex:1">
+          ✓ 5页面内（首页+关于+服务+联系+1自定义）<br>
+          ✓ 模板建站+手机自适应<br>
+          ✓ 基础SEO+联系表单<br>
+          ✓ 1次修改+后台使用培训
+        </div>
+        <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--br);font-size:11.5px;color:var(--tu)">不含域名主机、付费插件授权、文案图片</div>
       </div>
+      <div class="card" style="display:flex;flex-direction:column;background:#f5f9ff;border:2px solid #3b82f6">
+        <div style="display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap">
+          <span style="background:var(--bd);color:#fff;font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px">👑 最受欢迎</span>
+          <span style="background:#fff;color:var(--bd);border:1px solid #bfdbfe;font-size:11px;font-weight:700;padding:3px 12px;border-radius:20px">本网站为例</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div style="width:36px;height:36px;border-radius:10px;background:#fff;border:1px solid #bfdbfe;display:flex;align-items:center;justify-content:center;font-size:16px">🌐</div>
+          <span style="background:var(--al);color:var(--bd);border:1px solid #bfdbfe;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">三语同款</span>
+        </div>
+        <div class="card-title" style="font-size:16px;margin-bottom:2px">本网站同款 - 三语种标准版</div>
+        <div style="font-size:11px;color:var(--bd);font-weight:500;letter-spacing:.03em;margin-bottom:14px">STANDARD / 含入门版全部</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:16px">
+          <span class="price" style="font-size:28px">参考价$899</span>
+          <span style="font-size:12px;color:var(--bd);font-weight:500">/ 一次性</span>
+        </div>
+        <div class="card-desc" style="flex:1">
+          ✓ 含入门版全部内容<br>
+          ✓ 中英西三语切换（WPML / Polylang）<br>
+          ✓ 三语SEO+语言切换器<br>
+          ✓ 10页面内+翻译排版（客户提供翻译稿）
+        </div>
+        <div style="margin-top:14px;padding:10px 12px;background:#fff;border:1px solid #bfdbfe;border-radius:8px;font-size:11.5px;color:var(--tu)">含多语插件首年授权，不含专业人工翻译，翻译稿需客户提供</div>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+          <div style="width:36px;height:36px;border-radius:10px;background:#fff7ed;border:1px solid #fed7aa;display:flex;align-items:center;justify-content:center;font-size:16px">🔧</div>
+          <span style="background:#fff7ed;color:#c2410c;border:1px solid #fed7aa;font-size:11px;font-weight:700;padding:3px 10px;border-radius:20px">量身定制</span>
+        </div>
+        <div class="card-title" style="font-size:16px;margin-bottom:2px">更多定制 - 按需报价</div>
+        <div style="font-size:11px;color:var(--tu);letter-spacing:.03em;margin-bottom:14px">CUSTOM / 电商·预约·会员</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-bottom:16px">
+          <span class="price" style="font-size:24px">参考价$1499</span>
+          <span class="price" style="font-size:15px">起</span>
+        </div>
+        <div class="card-desc" style="flex:1">
+          ✓ 电商/预约/会员/多语言电商<br>
+          ✓ 自定义设计+功能开发<br>
+          ✓ 按小时 参考价$79/h 或项目打包
+        </div>
+        <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--br);font-size:11.5px;color:var(--tu)">需先沟通需求出方案</div>
+      </div>
+    </div>
+    <div style="margin-top:14px;background:#fff;border:1px solid var(--br);border-radius:12px;padding:14px 18px;display:flex;align-items:flex-start;gap:10px">
+      <span style="color:var(--am);font-size:13px">💡</span>
+      <p style="font-size:12.5px;color:var(--tu);line-height:1.6;margin:0"><strong>费用说明：</strong>域名约参考价$15/年，主机参考价$60起/年，付费插件另计，含1年基础维护咨询</p>
     </div>
   </div>
 
   <div class="sec-block" id="domain">
-    <div class="sec-header">📧 网站域名 + 谷歌企业邮箱设置</div>
+    <div class="sec-header" style="display:flex;align-items:center;justify-content:space-between">📧 网站域名 + 谷歌企业邮箱设置 <span style="font-size:12px;font-weight:500;color:var(--bd);background:#fff;border:1px solid #bfdbfe;border-radius:20px;padding:3px 12px">防拖账 · 预付开工版</span></div>
     <div class="cards">
-      <div class="card-full">
-        <div class="card-desc">1个域名 + 3个邮箱以内，Google Workspace / MX解析，<span class="price">参考价$99</span> 全包配好。</div>
+      <div class="card-full" style="padding:0;overflow:hidden">
+        <div style="height:3px;background:var(--bd)"></div>
+        <div style="padding:24px 26px">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:20px">
+            <div>
+              <div class="card-title" style="font-size:19px;margin-bottom:4px">域名 + 企业邮箱 一次配好</div>
+              <div style="font-size:13px;color:var(--tu)">刚起步小团队专用 · 当天可配好 · 交付可自查</div>
+            </div>
+            <span style="background:var(--td);color:#fff;font-size:11px;font-weight:600;padding:6px 14px;border-radius:20px;white-space:nowrap">⚡ 一次性交付</span>
+          </div>
+          <div style="display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:16px">
+            <span class="price" style="font-size:28px">参考价$99</span><span class="price" style="font-size:16px">/次</span>
+            <span style="font-size:14px;color:var(--td);font-weight:600">设置服务费</span>
+            <span style="font-size:12px;color:var(--tu);background:var(--cr);border:1px solid var(--br);border-radius:20px;padding:3px 12px">一次性人工费，不含官方订阅费</span>
+          </div>
+          <div style="border-top:1px solid var(--br);margin:16px 0"></div>
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <div style="display:flex;gap:12px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--al);border:1px solid #bfdbfe;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px">🌐</div>
+              <div style="flex:1"><div style="font-size:13.5px;font-weight:600;color:var(--td)">1个域名代注册 / 转入</div><div style="font-size:12px;color:var(--tu);margin-top:2px">.com 约 $15/年，官费实报实销，发票可查</div></div>
+              <span style="color:#10b981;font-size:15px">✓</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--al);border:1px solid #bfdbfe;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px">✉️</div>
+              <div style="flex:1"><div style="font-size:13.5px;font-weight:600;color:var(--td)">3个邮箱以内：name@你公司.com</div><div style="font-size:12px;color:var(--tu);margin-top:2px">例如 info@, sales@, 你的名字@公司域名</div></div>
+              <span style="color:#10b981;font-size:15px">✓</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--al);border:1px solid #bfdbfe;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px">🛡️</div>
+              <div style="flex:1"><div style="font-size:13.5px;font-weight:600;color:var(--td)">Google Workspace / MX 解析全配</div><div style="font-size:12px;color:var(--tu);margin-top:2px">MX · SPF · DKIM · DMARC 一次配好，避免进垃圾箱</div></div>
+              <span style="color:#10b981;font-size:15px">✓</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start">
+              <div style="width:28px;height:28px;border-radius:50%;background:var(--al);border:1px solid #bfdbfe;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:14px">📱</div>
+              <div style="flex:1"><div style="font-size:13.5px;font-weight:600;color:var(--td)">电脑 + 手机登录指导</div><div style="font-size:12px;color:var(--tu);margin-top:2px">Gmail / iPhone邮件 / Outlook 均可，含一次远程协助</div></div>
+              <span style="color:#10b981;font-size:15px">✓</span>
+            </div>
+          </div>
+          <div style="margin-top:18px;padding:12px 14px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;font-size:12px;color:#92400e;line-height:1.6">⚠️ Google Workspace 费用由Google官方收取：Starter 约 $7/用户/月起（年付），3用户约 $252/年。客户自行绑定信用卡付给 Google，本店不经手，不垫付，不代收。</div>
+          <div style="margin-top:12px;font-size:12px;color:var(--tu);line-height:1.6">🔒 <strong style="color:var(--td)">需100%预付后开工</strong>　超3个邮箱，每增加1个 +$29 设置费。适合刚起步小团队，含7天设置问题免费复查，不含后续密码重置/新增邮箱（可另付$29/次）。域名所有权归客户，交付含解析记录截图。</div>
+        </div>
+      </div>
+      <div class="card" style="align-self:start">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px">
+          <span style="color:var(--am)">✦</span>
+          <div class="card-title" style="margin-bottom:0;font-size:14px">为什么选 Google 企业邮箱？</div>
+        </div>
+        <div class="card-desc" style="line-height:1.9">
+          <strong style="color:var(--td)">提升专业度：</strong>客户看到 @你公司.com，比 @gmail.com 更信任，报价单更好谈。<br><br>
+          <strong style="color:var(--td)">避免进垃圾箱：</strong>配好 SPF / DKIM / DMARC，Google 基础设施发信，到达率比自建邮箱高得多。<br><br>
+          <strong style="color:var(--td)">不怕跑路：</strong>邮箱在 Google 官方，域名在你名下，我们只做设置，不绑架数据。
+        </div>
+        <div style="margin-top:16px;padding-top:14px;border-top:1px solid var(--br)">
+          <div style="font-size:12px;font-weight:600;color:var(--tu);margin-bottom:8px">客户常问</div>
+          <div style="font-size:12.5px;color:var(--tm);line-height:1.7;margin-bottom:8px"><strong>Q: 以后不用你们还能用吗？</strong> 能，Google 官方计费，与我们无关。</div>
+          <div style="font-size:12.5px;color:var(--tm);line-height:1.7"><strong>Q: 能先做后付吗？</strong> 抱歉，设置类服务需预付，怕拖账，望理解。</div>
+        </div>
+        <div style="margin-top:14px;text-align:center;font-size:11px;color:var(--tu)">一次性配好 · 产权清晰</div>
       </div>
     </div>
   </div>
